@@ -19,7 +19,7 @@
             margin: 0;
         }
         header {
-            background: #0078D7;
+            background: #FFC107; /* Gelb */
             color: #fff;
             padding: 2em 1em;
             text-align: center;
@@ -42,14 +42,14 @@
             z-index: 10;
         }
         nav a {
-            color: #0078D7;
+            color: #FFC107; /* Gelb */
             text-decoration: none;
             font-weight: bold;
             margin: 0 1em;
             padding: 0.5em 1em;
         }
         nav a:hover {
-            background: #eef6ff;
+            background: #FFF4D3; /* Hellgelber Hover-Effekt */
             border-radius: 5px;
         }
 
@@ -61,7 +61,7 @@
         section h2 {
             font-size: 2em;
             margin-bottom: 1em;
-            color: #0078D7;
+            color: #FFC107; /* Gelb */
         }
         .card {
             background: #fff;
@@ -69,30 +69,11 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             margin: 1em 0;
             padding: 1.5em;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .card img {
-            width: 80px;
-            height: 80px;
-            object-fit: cover;
-            border-radius: 50%;
-            margin-right: 1em;
-        }
-        .card h3 {
-            margin-bottom: 0.5em;
-            font-size: 1.5em;
-            color: #333;
-        }
-        .card p {
-            margin-top: 0.5em;
         }
 
         iframe {
             width: 100%;
-            max-width: 900px;
-            height: 500px;
+            height: 600px;
             margin: 1em 0;
             border: none;
             border-radius: 10px;
@@ -102,7 +83,7 @@
         a.button {
             display: inline-block;
             padding: 0.8em 1.5em;
-            background: #0078D7;
+            background: #FFC107; /* Gelb */
             color: white;
             text-decoration: none;
             border-radius: 5px;
@@ -110,18 +91,18 @@
             margin-top: 1em;
         }
         a.button:hover {
-            background: #005fa3;
+            background: #E0A800; /* Dunkleres Gelb beim Hover */
         }
 
         footer {
             text-align: center;
             padding: 1.5em;
-            background: #222;
+            background: #333;
             color: white;
             margin-top: 2em;
         }
         footer a {
-            color: #0078D7;
+            color: #FFC107; /* Gelb */
             text-decoration: none;
         }
     </style>
@@ -139,21 +120,10 @@
     </nav>
 
     <section id="standorte">
-        <h2>Standorte auf dem Campus</h2>
-        <div class="card">
-            <div>
-                <h3>Mensa</h3>
-                <p>Die Mensa im Hauptgebäude bietet täglich frische Mahlzeiten. Sie befindet sich im Erdgeschoss.</p>
-            </div>
-            <img src="https://via.placeholder.com/80" alt="Mensa">
-        </div>
-        <div class="card">
-            <div>
-                <h3>Druckerräume</h3>
-                <p>Die Druckerräume befinden sich in Gebäude A, Raum 103, und in Gebäude B, Raum 205.</p>
-            </div>
-            <img src="https://via.placeholder.com/80" alt="Druckerräume">
-        </div>
+        <h2>Campus-Orientierungsplan</h2>
+        <p>Hier finden Sie den Orientierungsplan des Campus Rotenbühl. Dieser hilft Ihnen, wichtige Standorte wie die Mensa, Sekretariat und Druckerräume zu finden:</p>
+        <!-- PDF-Datei einbetten -->
+        <iframe src="Orientierungsplan_CRB_072017.pdf"></iframe>
     </section>
 
     <section id="termin">
@@ -171,6 +141,10 @@
     <footer>
         <p>© 2024 HTW Saar - Campus Rotenbühl Wegweiser</p>
         <p>Erstellt mit <a href="https://github.com" target="_blank">GitHub Pages</a></p>
+    </footer>
+</body>
+</html>
+
     </footer>
 </body>
 </html>
